@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<style>
+    :link{
+        color: black;
+    }
+    whiteonwhite{
+        
+        color: black;
+    }
+.footer{
+    font-family: sans-serif;
+    font-size: 12pt;
+    color: white ;
+    font-weight: 700;
+    text-align: center;
+    background-color: #034883;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18pt;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    background-color: #034883;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 70px;
+    font-family: sans-serif;
+    position: fixed;
+    
+}
+.left-div {
+    float: left;
+    width: 70%;
+    height: 90%;
+    background-color: ;
+    font-family: sans-serif;
+    padding-top: 50px;
+    border-right: 1px solid black;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.right-div {
+    margin-left: 70%;
+    padding-top: 50px;
+    width: auto;
+    font-family: sans-serif;
+    padding-left: 10px;
+    height: 100vh;
+}
+.class1 {
+
+    }
+.class2 {
+
+    }
+    .notice{
+        color: red;
+        font-family: sans-serif;
+        font-size: 12pt;
+        font-weight: 700;
+    }
+    
+    li{
+        font-size: 10pt;
+    }
+    .small{
+        font-size: 10pt;
+        font-family: sans-serif;
+    }
+</style>
+
+<head>
+    <title>Mathew Wade | Software Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#showhide").click(function(){
+                var s = $("#showhide").html();
+                $("#columnRight").slideToggle("slow");
+                if (s === "Hide Summary"){
+                    $(".right-div").css("width", "0%");
+                    $(".left-div").css("width", "100%");
+                    $("#showhide").html("Show Summary");
+                } 
+                else{
+                    $(".left-div").css("width", "70%");
+                    $(".right-div").css("width", "auto");
+                    $("#showhide").html("Hide Summary");
+                }
+                
+                });
+            });
+    </script>
+</head>
+
+<html>
+    <div class="header">
+        <label><a href="mailto:mathew.wade@doculogix.co.uk?subject=A question about your CV and availability">Mathew Wade</a> | 07585 621 478</label><br>
+        <label style="font-size: 8pt;" id="showhide">Hide Summary</label>
+    </div>
+    <div class="content">
+        <div class="left-div">
+        <div class="class1">
+        <h1>Personal Statement</h1>
+        <p style="font-size: 10pt;">I am a versatile hybrid senior business analyst and technical architect with 25 years of varied IT experience ranging from physical system builds, data centre maintenance, full stack and 4GL programming. I have managed complex projects with aggressive timelines in a variety of project methodologies. I am able to manage multi-disciplined teams both onshore and offshore and able to communicate with technical and non-technical personnel in all positions of a business. With a proven track record of successful projects across industries such as banking, utilities, travel and tourism, delivering innovative solutions to complex problems, cost saving projects and improving efficiencies whilst mentoring others. Additional skills in cost estimating, full stack programming, Azure and VMWare exposure and creative design using Adobe CC products.</p>
+        </div><hr/>
+        <div class="class2">
+            <h1>DocuLogix Limited<img src="https://static.wixstatic.com/media/879f04_221b9f4cfb594081beb79cce682f8e28.png" align="right" height="100px"/></h1>
+            <h4>March 2014 - Present</h4>
+            <h4>Director of Professional Services</h4>
+            <p>I took the decision to setup DocuLogix Limited in February 2014 after learning that a client required help in migrating a DOC1 environment from both v4 and v5 to v6. After securing the contract and delivering to specification, I have since moved back to a previous client I worked with delivering change and incident support to correspondence items. I have performed the following deliverables to the following clients:</p>
+            <ul>
+                <li>Royal Bank of Scotland, DOC1 Developer</li>
+                <ul>
+                    <li>Moving v4 and v5 DOC1 code into a new v6 environment for a new banking setup</li>
+                    <li>QA to other work to ensure that all variations of correspondence are valid as per specification</li>
+                </ul>
+                <li>RWE/nPower, Application Architect</li>
+                <ul>
+                    <li>BAU RFC (Request for Change) to existing correspondence items</li>
+                    <li>Reconfiguring the processing of HIP files to be better performing</li>
+                    <li>Creating new software to capture new T&amp;C and Tariff Guides for new Tariff&apos; to go on sale within 24 hours of creation. We were able to do this in 40 minutes with unit testing</li>
+                    <li>Creating new bespoke software to analyse failed spools of data automatically</li>
+                    <li>Provide guidance to offshore resources on the DOC1 toolset</li>
+                    <li>Implementation of a brand new Invoice to address the previous issues of the older invoice. I was a major stakeholder in the project being called upon from design queries to overall performance of new data to implementing Content Author.</li>
+                </ul>
+            </ul>
+        </div><hr/>
+        <div class="class1">
+            <h1>Pitney Bowes Software<img src="https://www.pitneybowes.com/content/dam/pb/images/newsroom/multimedia/gallery/infographics/pb_logo_highres_20151014063501485.jpg" align="right" height="100px"/></h1>
+            <h4>April 2011 - March 2014</h4>
+            <h4>Professional Services Consultant / Business Analyst</h4>
+            <p>Working on other clients projects, I have performed the role of Business Analyst by obtaining requirements and converting them into functional and technical documents whilst liaising with 3rd parties. I have also performed the role of developer and project manager. A summary of my key duties are:</p>
+            <ul>
+                <li>Manage multiple clients/projects with very specific needs and requirements in an AGILE method</li>
+                <li>Adhere to project management principals and disciplines (PRINCE2)</li>
+                <li>Provide a Business Analyst role where one didn&apos;t exist by translating requirements from the customer into a technical specification ready for development</li>
+                <li>Create solid documentation for both internal and external use as well as technical and non-technical staff</li>
+                <li>Suggest requirements where needed if solution is not defined</li>
+                <li>Ability to be deployed anywhere within the EMEA profile (from Glasgow to Abu Dhabi)</li>
+                <li>Maintain knowledge with all CCM portfolio of products including:</li>
+                <ul>
+                    <li>DOC1 Designer Version 5 and Series 6</li>
+                    <li>Vault 6.0 (Tomcat)</li>
+                    <li>EngageOne v2 and v3 (Websphere)</li>
+                    <li>Sagent Dataflow v6.7</li>
+                    <li>StreamWeaver</li>
+                    <li>Content Author 6.0</li>
+                    <li>eMessaging 1.4</li>
+                    <li>Create and implement custom scripts with PCE, PERL and C# applications</li>
+                    <li>Create VM&apos;s to test software and end to end solutions before delivery to the client</li>
+                    <li>Support other team members with problems and help find solutions</li>
+                </ul>
+                <b>Clients and Projects included:</b>
+                <ul>
+                    <li><b>npower (Leeds)</b><img src="https://switch.which.co.uk/affiliate-assets/which-switch/images/suppliers-logo/npower-logo_thumb-185892.jpg" align="right" height="50px" /></li>
+                    <p class="small">Upgrade software from Version 5 to Version 6 and also work with the business to ensure the requirements were acceptable to developers. I also was lead developer ensuring all developers (both in Milan and Noida) adhered to coding practices and delivered code on time and to the required and signed off specification</p>
+                    <li><b>Student Loans Company (Glasgow)</b><img src="http://www.slc-apps.co.uk/appdemo2015/img/slc-logo.png" align="right" height="50px" /></li>
+                    <p class="small">Upgrading software from Version 4 to Version 6. Assisted in best practice of coding development for the huge difference in versions. Coached and mentored the onsite developers to ensure the product was being used effectively</p>
+                    <li><b>Energia (Belfast)</b><img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/586f80e30000ff00059a4f19/0x0.png" align="right" height="50px" /></li>
+                    <p class="small">Upgrading software to Version 6. Ensure that the developers were sure on how to use the new software. Also ensured that the current billing system worked end to end with the new version</p>
+                    <li><b>Northumbrian Water Limited (Durham)</b><img src="https://i2-prod.chroniclelive.co.uk/incoming/article7946046.ece/ALTERNATES/s1200/northumbrian-water-logo.jpg" align="right" height="50px" /></li>
+                    <p class="small">Implemented an entire new billing system from start to finish. Coached the onsite developers to learn best practices and quickly and efficiently create and deploy code</p>
+                    <li><b>Scottish Power (Glasgow)</b><img src="https://www.scottishpower.com/images/logo_sp_rect.jpg" align="right" height="50px" /></li>
+                    <p class="small">I worked with the business to ensure the requirements were acceptable and approve or reject specifications that were assigned to us for development. I was able to suggest change where appropriate. Where a functional specification didn&apos;t exist, I was tasked to create one to the business format</p>
+                    <li><b>Abu Dhabi Water Electricit Authority (ADWEA/ADDC) (Abu Dhabi)</b><img src="https://www.internationalwatersummit.com/__media/ADWEA.jpg-1.png" align="right" height="50px" /></li>
+                    <p class="small">I was assigned to the team in Abu Dhabi to help with coding and development to the required business rules. Any rules that were not achievable I helped ensure a new suggestion was made to the head of documentation. I was heavily involved with the 3rd party supplier of data to ensure we could create the document required</p>
+                    <li><b>Northern Ireland Electricity (Belfast)</b><img src="http://www.tli.ie/wp-content/uploads/2016/05/nie.jpg" align="right" height="50px" /></li>
+                    <p class="small">A new billing system was installed and I was sent to tutor the outsource unit on how to best use the software. I helped create and define documentation used for their technical and functional specifications to ensure everything was captured</p>
+                    <li><b>Thomas Cook (Bradford)</b><img src="http://www.friendsaction.co.uk/sites/default/files/images/locations/thomas-cook-group-logo-logotype-1024x768_0.png" align="right" height="50px" /></li>
+                    <p class="small">Please see below as this was a continuation of my duties whilst permanently employed there</p>
+                </ul>
+            </ul>
+        </div><hr/>
+        <div class="class2">
+            <h1>Thomas Cook<img src="http://www.friendsaction.co.uk/sites/default/files/images/locations/thomas-cook-group-logo-logotype-1024x768_0.png" align="right" height="100px"/></h1>
+            <h4>DMS Architect (Senior BA / PM)</h4>
+            <h4>October 2009 - April 2011</h4>
+            <p>Whilst at Thomas Cook, I performed the role of Architect of Document Services which comprised of being a Business Analyst, Project Manager, Systems Analyst and Team Manager. A summary of my objectives were:</p>
+            <ul>
+                <li>Maintain a resource schedule through conference calls and meetings to update all interested parties on the development progress of tasks/projects assigned to the team</li>
+                <li>Act as intermediary Business Analyst to interpret business requirements from all areas of the company into technical work packages for the DMS, or other teams, to work on in an AGILE approach</li>
+                <li>Effectively manage a team of 2 developers and 2 technical analysts including regular one-to-one sessions as well as performing annual performance appraisals</li>
+                <li>Prioritise current workload between all areas of the system from support to development</li>
+                <li>Keeping track of all system changes requested, agreed, implemented and their status</li>
+                <li>Interface with the DMS Systems Manager to ensure all Business Requirements Documents were relevant and achievable</li>
+                <li>Maintain the INFRA support call logging system and escalate issues where apparent</li>
+                <li>Raise change requests via ITSM so Accenture were aware of any major system changes and were tracked appropriately</li>
+                <li>Take part in a 24x7x365 support call rota as well as being on permanent incident management escalation as head of the team</li>
+                <li>Ensure that all knowledge of the system was recorded for ease of transfer</li>
+                <li>Provide and recommend solutions based on regular MI of the DMS system</li>
+                <li>Recommend relevant and cost effective training solutions for the team</li>
+                <li>Ensure all parts of the system were running smoothly and recommend software upgrades where necessary and performance tweaks where essential</li>
+                <li>Analyse problem areas using MI created from various data sources, Excel pivots and PERFMON data. Data also used to create KPI for higher management</li>
+                <li>Assess server infrastructure layout and constantly adjusting the configuration through VMWare Tools to ensure optimal performance</li>
+            </ul>
+        </div><hr/>
+        <div class="class1">
+            <h1>Accenture<img src="http://1000logos.net/wp-content/uploads/2016/10/Accenture-logo.png" align="right" height="100px"/></h1>
+            <h4>AO Service Lead (BA / Systems Analyst)</h4>
+            <h4>October 2008 - October 2009</h4>
+            <p>This position saw me undertaking both a Business Analyst and Systems Analyst role. Some key points were:</p>
+            <ul>
+                <li>Ensure key service were delivered to SLA as per agreed SI guidelines
+                <li>Act as Business Analyst by talking to stakeholders to turn requirements into work packages for distribution to Project Manager and then into a feasible project for delivery</li>
+                <li>Develop applications in Designer and Sagent as per client requirements for delivery of customer documentation by post and electronic methods</li>
+                <li>Develop backend software solutions in C#, PHP and SQL to ensure that processing was consistent by adapting to client conditions</li>
+                <li>Partaking in an on-call rota to ensure the system was fully operational 24x7</li>
+                <li>Responsible for maintaining workloads according to client requests and delivering on time and on budget whilst also ensuring the highest quality of work</li>
+                <li>Undertaking QPI to ensure documentation for the whole of the AO department teams were using a standard format. It was my task to get the unit to a CMMI Level 5 status</li>
+                <li>Instil myself as the units ITSM champion to aid others in its use and provide a first point of contact for anyone who had issues with the software</li>
+            </ul>
+            <h4>Key Achievements</h4>
+            <ul>
+                <li>Cost savings to the client (Thomas Cook) from multiple enhancement recommendations</li>
+                <li>Cost savings to employer (Accenture) by negotiating with client to pay for a significantly increased training budget</li>
+                <li>Brought the service into a virtual environment with a split site redundancy feature</li>
+                <li>Took direct control over other areas of the service that were previously looked after by a third party thus widening the scope of the teams capability</li>
+                <li>Looking after QPI compliance of the unit by taking additional role as QPI and Configuration manager</li>
+            </ul>
+        </div><hr/>
+        <div class="class1">
+        <h1>Early Career Highlights</h1>
+            <table border="1" width="100%">
+                <tr>
+                    <td><b>Company</b></td><td><b>Position</b></td><td><b>From</b></td><td><b>To</b></td>
+                </tr>
+                <tr>
+                    <td>Accenture</td><td>Application Programmer</td><td>May-05</td><td>Oct-08</td>
+                </tr>
+                <tr>
+                    <td>Accenture</td><td>Systems Guardian</td><td>Apr-02</td><td>May-05</td>
+                </tr>
+                <tr>
+                    <td>Thomas Cook Holidays</td><td>Systems Guardian</td><td>Aug-01</td><td>Apr-02</td>
+                </tr>
+                <tr>
+                    <td>SystemsGo! Services Ltd</td><td>Senior Operations Consultant</td><td>Dec-98</td><td>Aug-01</td>
+                </tr>
+                <tr>
+                    <td>Leeds Building Society</td><td>Data Centre Technician</td><td>Aug-94</td><td>Dec-98</td>
+                </tr>
+            </table>
+                            <p align="justify">I started my computing career at the Leeds Building Society (then the Leeds &amp; Holbeck BS) where I was part of a trial apprenticeship. This success story made its way into the Yorkshire Evening Post. After gaining several years of knowledge in that environment (ICL VME) I took to performing consultancy work around the country under my own company of SystemsGo! Services Ltd. I traded for about three years and worked for many prestigious companies such as ICL, BT, South West Water and Southern Water. I also supported many local businesses with server and network infrastructure setup and troubleshooting. I then brought all this experience to jmc in August 2001 working as a Systems Guardian. During this time, the department was TUPE&apos;d across to Accenture where I started as a Level G in April 2001. I then left the data centre to pursue a programming career after my “noddys” were noticed by the Application Management Lead. I was offered a position as DMS Application Programmer Level F where I soon progressed to Level E after delivering excellent results. Since that time I was promoted to Level D (DMS Service Lead) and took on a staff of 2, 1 programmer and 1 analyst. In October 2009, the DMS Team was TUPE&apos;d back to Thomas Cook, Support Services where I held the position of DMS Team Lead at RL5. I then left Thomas Cook to pursue a career with the company that made the software I enjoy using.</p>
+        </div><hr/>
+        <div class="class2">
+            <h1>Academic Background</h1>
+            <p>12x GCSE&apos;s, West Leeds High School (1994)</p>
+        </div><hr/>
+        <div class="class2">
+            <h1>Professional Development</h1>
+            <p>I have attecned the following courses and achieved a certificate of attendance and completion:</p>
+            <ul>
+                <li>Sagent Data Flow Solution eXpert &amp; Administration – December 2008</li>
+                <li>Microsoft C# 3.0 – February 2009</li>
+                <li>M2071 – Microsoft T-SQL – March 2009</li>
+                <p>I am currently in the middle of the following education:</p>
+                <li>(Cert) in Business Studies, year 1 passed</li>
+                <li>(Dip) Photography Institute</li>
+            </ul>
+        </div><hr/>
+        <div class="class2">
+            <h1>Other Information</h1>
+            <p>Outside of a professional environment I like to cook, especially themed evenings such as Mexican or Tapas. Both my wife and I enjoy travelling, Spain is a favourite closely followed by Dublin. When not on a plane, we like to travel to the coast and enjoy some tasty fish and chips!<br />My main hobby is amateur photography and I love to take my camera anywhere we go. I like to create slideshows from my photographs and set them to music.<br />We also enjoy going to the cinema and a good spot of American TV shows such as CSI, Law &amp; Order etc! Both my wife and I are proud parents of twin boys who arrived in May 2010.<br />I also write for a tech website creating news, reviews and blogs and my profile can been seen at <a style="whiteonwhite" href="http://www.cclonline.com/ccl-tech/authors/mathew/">CCL Computers</a><br/>
+                This entire CV was <u>hand written</u> in HTML with embedded CSS in a few hours!
+            </p>
+        </div><hr/>
+        <div class="class2">
+            <h1>Personal Details</h1>
+            <p>Date of Birth: 23rd February 1978 (39)<br/>
+            Nationality: British<br/>
+            Marital Status: Married<br/>
+            Driving Licence: Full, Clean<br/>
+            Dependants: 2<br/>
+                DBS Checked: Yes, 9th December 2017<br/></p>
+            <p align="center"><b>REFERENCES AVAILABLE UPON REQUEST</b></p><br/><br/><br/>
+        </div><hr/>
+    </div>
+        <div class="right-div" id="columnRight">
+        <h2>High Level Summary</h2>
+    <hr/>
+    <h3>Document Composition Skills</h3>
+    <ul>
+        <li>DOC1 Series 5</li>
+        <li>DOC1 Series 6</li>
+        <li>EngageOne</li>
+        <li>Vault</li>
+        <li>Content Author</li>
+        <li>Dataflow</li>
+    </ul>
+    <h3>Programming Languages</h3>
+    <h4>Web Full Stack</h4>
+    <ul>
+        <li>C#</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>CSS</li>
+        <li>MS SQL</li>
+        <li>Razor</li>
+    </ul>
+    <h3>Scripting Languages</h3>
+    <ul>
+        <li>perl</li>
+        <li>bash/ksh</li>
+        <li>CMD</li>
+    </ul>
+    <h3>Other Technologies</h3>
+    <ul>
+        <li>XML</li>
+        <li>iOS Swift/Xamarin</li>
+        <li>Visio</li>
+        <li>Project</li>
+        <li>MS Office Full Stack</li>
+        <li>Adobe CC Full Stack</li>
+    </ul>
+        <hr/>
+        <h2>Availability</h2>
+        <p class="notice">2-4 Weeks Notice</p>
+        <p class="notice">Current Engagement until:<br/>23rd February 2018</p>
+    </div>
+    </div>
+    <div class="footer">DocuLogix Limited | 1200 Century Way | Thorpe Park | Leeds | LS15 8ZA<br>0800 612 73 72 | 07585 621 478 | <a href="www.doculogix.co.uk">doculogix.co.uk</a></div>
+</html>
