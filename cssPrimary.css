@@ -1,26 +1,37 @@
 /* CSS Primary File for Mathew Wade's GitHub Website */
-/* CHANGELOG - 210619 - Initial design */
+/* CHANGELOG - 21062019 - Initial design */
 body {
     font-family: sans-serif;
     background-color: #DDD;
-    overflow: scroll;
+    
 }
-#header{
+header{
     text-align: center;
     background-color: black;
     color: gold;
     padding: 5px;
 }
-#top{
+footer{
     position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 8pt;
+    width: 100vw;
+}
+#top{
     top: 0;
     left: 0;
+    width: 100%;
 }
 #mainWindow{
-    
-    height: 85vh;
-    width: 100%;
-
+    position: absolute;
+    overflow: visible;
+    top: 200px;
+    width: 100vw;
+    bottom: 0;
 }
 /* Navbar container */
 .navbar {
