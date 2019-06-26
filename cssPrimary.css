@@ -11,7 +11,11 @@ body {
     color: gold;
     padding: 5px;
 }
-
+#top{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 #mainWindow{
     
     height: 85vh;
