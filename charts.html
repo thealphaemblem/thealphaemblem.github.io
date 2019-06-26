@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive Chart Sample</title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            #footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 99%;
+                padding: 5px;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='header'>
+            <h1>Interactive Chart Sample</h1>
+            <hr/>
+                <table>
+                    <tr>
+                        <td>Groceries</td><td><input type=range min=0 max=100 id='groceries' oninput="drawChart()" /></td><td><p id="v_groceries"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Fuel</td><td><input type=range min=0 max=100 id='fuel' oninput="drawChart()" /></td><td><p id="v_fuel"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Credit Card</td><td><input type=range min=0 max=100 id='creditcard' oninput="drawChart()" /></td><td><p id="v_creditcard"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Mortgage</td><td><input type=range min=0 max=100 id='mortgage' oninput="drawChart()" /></td><td><p id="v_mortgage"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Loan</td><td><input type=range min=0 max=100 id='loan' oninput="drawChart()" /></td><td><p id="v_loan"></p></td>
+                    </tr>
+                </table>
+            
+            <div id='pieChart'>
+
+
+            </div>
+            <hr/>
+        </div>
+        <div id='body'></div>
+        <div id='footer'>Charts POC - Written by Mathew Wade</div>
+    </body>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+          ['Category', 'Spending'],
+          ['Fuel', parseInt(document.getElementById('fuel').value)],
+          ['Groceries', parseInt(document.getElementById('groceries').value)],
+          ['Credit Card', parseInt(document.getElementById('creditcard').value)],
+          ['Loan', parseInt(document.getElementById('loan').value)],
+          ['Mortgage', parseInt(document.getElementById('mortgage').value)]
+        ]);
+
+          // Optional; add a title and set the width and height of the chart
+          var options = {'title':'Spending Breakdown', 'width':550, 'height':400};
+
+          // Display the chart inside the <div> element with id="piechart"
+          var chart = new google.visualization.PieChart(document.getElementById('pieChart'));
+          chart.draw(data, options);
+            
+            document.getElementById("v_groceries").innerHTML = document.getElementById("groceries").value;
+            document.getElementById("v_fuel").innerHTML = document.getElementById("fuel").value;
+            document.getElementById("v_creditcard").innerHTML = document.getElementById("creditcard").value;
+            document.getElementById("v_mortgage").innerHTML = document.getElementById("mortgage").value;
+            document.getElementById("v_loan").innerHTML = document.getElementById("loan").value;
+        }
+    </script>
+</html>
