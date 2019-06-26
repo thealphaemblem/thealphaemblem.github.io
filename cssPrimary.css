@@ -3,6 +3,7 @@
 body {
     font-family: sans-serif;
     background-color: #DDD;
+    overflow: scroll;
 }
 #header{
     text-align: center;
