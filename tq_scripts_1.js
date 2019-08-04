@@ -3,8 +3,8 @@ var question;
 var answer;
 
 function askQuestion() {
-    var a = Math.floor(Math.random()*12); //pick a number between 1-12
-    var b = Math.floor(Math.random()*12); //pick a second number between 1-12
+    var a = Math.floor(Math.random()*100); //pick a number between 1-12
+    var b = Math.floor(Math.random()*100); //pick a second number between 1-12
     var operator = Math.floor(Math.random()*3); //pick a number between 1-3
     
     switch(operator){
@@ -32,6 +32,7 @@ function checkAnswer() {
         document.getElementById("answer").innerHTML = "CORRECT"
         updateScore();
         askQuestion();
+        document.getElementById("myAnswer").innerHTML = "";
     }
     else{
         //false
