@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+        background: black;
+    color: white;
+}
+
+#banner{
+    text-align: center;
+    padding: 5px;
+}
+
+#totals{
+    text-align: center;
+
+    padding: 10px;
+    font-size: 24px;
+}
+#content{
+    color: red;
+    font-size: 48px;
+    text-align: center;
+}
+#myAnswer{
+    font-size: 48px;
+    width: 200px;
+}
+#checkAnswer{
+    font-size: 48px;
+}
+#answer{
+    color: yellow;
+}
