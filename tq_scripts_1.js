@@ -32,7 +32,7 @@ function checkAnswer() {
         document.getElementById("answer").innerHTML = "CORRECT"
         updateScore();
         askQuestion();
-        document.getElementById("myAnswer").innerHTML = "";
+        document.getElementById("myAnswer").value = "";
     }
     else{
         //false
