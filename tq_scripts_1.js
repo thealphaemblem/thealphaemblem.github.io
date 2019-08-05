@@ -3,8 +3,8 @@ var question;
 var answer;
 
 function askQuestion() {
-    var a = Math.floor(Math.random()*100); //pick a number between 1-12
-    var b = Math.floor(Math.random()*100); //pick a second number between 1-12
+    var a = Math.floor(Math.random()*12); //pick a number between 1-12
+    var b = Math.floor(Math.random()*12); //pick a second number between 1-12
     var operator = Math.floor(Math.random()*3); //pick a number between 1-3
     
     switch(operator){
@@ -25,14 +25,18 @@ function askQuestion() {
     //document.getElementById("answer").innerHTML = answer;
 }
 
+function skip() {
+	askQuestion();
+}
+
 function checkAnswer() {
     var myAnswer = document.getElementById("myAnswer").value;
     if (answer == myAnswer) {
         //correct
         document.getElementById("answer").innerHTML = "CORRECT"
+				document.getElementById("myAnswer").value = null; //clear text box
         updateScore();
         askQuestion();
-        document.getElementById("myAnswer").value = "";
     }
     else{
         //false
